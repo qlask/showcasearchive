@@ -1,0 +1,59 @@
+/* ===================================================================== */
+/* RESET + BASE                                                          */
+/* ===================================================================== */
+*, *::before, *::after{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+body{
+  margin:0;
+  background:var(--void);
+  color:var(--ink);
+  font-family:var(--font-body);
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+h1,h2,h3,.display{
+  font-family:var(--font-display);
+  letter-spacing:-0.02em;
+  margin:0;
+}
+p{ margin:0; }
+a{ color:inherit; }
+img{ max-width:100%; display:block; }
+button, input{ font:inherit; color:inherit; }
+button{ background:none; }
+::selection{ background:var(--signal); color:#fff; }
+:focus-visible{ outline:2px solid var(--signal); outline-offset:2px; border-radius:4px; }
+
+.mono{ font-family:var(--font-mono); letter-spacing:-0.01em; }
+[hidden]{ display:none !important; }
+
+.wrap{ max-width:1180px; margin:0 auto; padding:0 24px; }
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation-duration:0.01ms !important; transition-duration:0.01ms !important; scroll-behavior:auto !important; }
+}
+
+/* faint dot-grid texture — the site's recurring "editor grid" motif */
+.grid-texture{
+  background-image:radial-gradient(circle, rgba(255,255,255,0.09) 1px, transparent 1px);
+  background-size:26px 26px;
+}
+
+/* shared eyebrow label */
+.eyebrow{
+  display:inline-flex; align-items:center; gap:8px;
+  background:var(--signal-soft); color:var(--signal);
+  padding:6px 13px; border-radius:var(--r-full);
+  font-size:12.5px; font-weight:600;
+  font-family:var(--font-mono); letter-spacing:0.02em;
+  border:1px solid var(--signal-line);
+}
+.eyebrow-dot{ width:6px; height:6px; border-radius:50%; background:var(--signal); flex-shrink:0; }
+
+/* shared diamond mark — the site's signature glyph, a rotated block
+   echoing Geometry Dash's editor cubes, reused in the logo, section
+   markers and empty states */
+.block-mark{
+  width:9px; height:9px; background:var(--signal);
+  border-radius:2px; transform:rotate(45deg); flex-shrink:0;
+}
