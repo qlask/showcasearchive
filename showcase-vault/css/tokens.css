@@ -1,0 +1,71 @@
+/* =====================================================================
+   DESIGN TOKENS
+   Palette: deep graphite canvas, single violet signal color, and a
+   small desaturated "demon-red" reserved strictly for difficulty data
+   (mirrors Geometry Dash's own convention of drawing demons in red —
+   it encodes real information, it isn't decoration).
+   ===================================================================== */
+:root{
+  /* surfaces */
+  --void:#0b0c10;
+  --canvas:#101218;
+  --panel:#15171f;
+  --panel-raised:#1b1e27;
+  --panel-hair:#20232d;
+
+  /* lines */
+  --line:rgba(255,255,255,0.08);
+  --line-strong:rgba(255,255,255,0.14);
+  --line-hero:rgba(255,255,255,0.06);
+
+  /* ink */
+  --ink:#f2f3f6;
+  --ink-soft:#9297a3;
+  --ink-faint:#5d6169;
+
+  /* signal (single accent) */
+  --signal:#7c6cff;
+  --signal-ink:#0b0c10;
+  --signal-soft:rgba(124,108,255,0.14);
+  --signal-line:rgba(124,108,255,0.4);
+  --signal-glow:rgba(124,108,255,0.28);
+
+  /* secondary functional (mint) — used only for confirmations */
+  --ok:#3ddc97;
+  --ok-soft:rgba(61,220,151,0.14);
+
+  /* difficulty data-color — reserved, not a page accent */
+  --demon:#e0555f;
+  --demon-soft:rgba(224,85,95,0.16);
+
+  /* format data-colors — muted, reserved for badges only */
+  --fmt-gdr:#7c6cff;
+  --fmt-gdr2:#3ddc97;
+  --fmt-gmd:#e0a53d;
+
+  /* changelog tag colors */
+  --tag-added:#7c6cff;
+  --tag-fixed:#e0a53d;
+  --tag-changed:#5a8fd6;
+
+  /* radii — moderate, engineered, not full pill / not zero */
+  --r-xs:6px;
+  --r-sm:10px;
+  --r-md:14px;
+  --r-lg:20px;
+  --r-full:100px;
+
+  /* shadow */
+  --shadow-sm:0 1px 2px rgba(0,0,0,0.3);
+  --shadow-md:0 10px 30px rgba(0,0,0,0.35);
+  --shadow-lg:0 24px 70px rgba(0,0,0,0.5);
+  --shadow-glow:0 0 0 1px var(--signal-line), 0 12px 40px var(--signal-glow);
+
+  /* type */
+  --font-display:'Sora',system-ui,sans-serif;
+  --font-body:'Inter',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+
+  /* motion */
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
