@@ -57,6 +57,20 @@ export const LEVELS = [
     description: "An Easy Demon by yyene.",
     id: "145216304",
     uploadDate: "2026-07-26"
+  },
+  {
+    slug: "red-alert",
+    name: "Red Alert",
+    creator: "RatLiffiGD",
+    type: "gdr2",
+    size: "586 B",
+    objects: "15,034",
+    diff: "Easy Demon",
+    gif: "https://i.imgur.com/ZXnzK2c.png",
+    file: "https://drive.google.com/file/d/1P4CaqfkvLOe1WOgVXm7StihTrlBMxe2i/view?usp=sharing",
+    description: "An well known free demon.",
+    id: "128665322",
+    uploadDate: "2026-07-27"
   }
 ];
 
